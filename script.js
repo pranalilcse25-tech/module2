@@ -1,8 +1,8 @@
 <script>
-// Select form
+
 const form = document.querySelector(".form-container");
 
-// ===== SHOW RANGE VALUES =====
+
 const ranges = document.querySelectorAll("input[type=range]");
 
 ranges.forEach(range => {
@@ -15,11 +15,11 @@ ranges.forEach(range => {
     });
 });
 
-// ===== FORM SUBMIT =====
+
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // Get values
+  
     const name = form.querySelector("input[name=name]").value;
     const email = form.querySelector("input[name=email]").value;
 
@@ -31,7 +31,7 @@ form.addEventListener("submit", function(e) {
     alert("Feedback submitted successfully!");
 });
 
-// ===== RESET MESSAGE =====
+
 form.addEventListener("reset", function() {
     setTimeout(() => {
         alert("Form has been reset!");
